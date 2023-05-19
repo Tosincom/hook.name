@@ -10,11 +10,10 @@ function MovieList() {
   const [movies, setMovies] = useState([
     {
       title: "Man of Steel",
-      description:
-        "Man of Steel is an exhilarating superhero film that traces the journey of Clark Kent, a man with extraordinary powers hiding beneath his everyday persona. As Earth faces a menacing threat from General Zod, Clark must embrace his destiny as Superman to protect his adopted home and the ones he loves. Action-packed and visually stunning, this film explores themes of identity and sacrifice while showcasing Superman as a symbol of hope.",
       posterURL: Image1,
       rating: 5,
       id: 1,
+     
     },
     {
       title: "Avengers Infinity War",
@@ -32,7 +31,7 @@ function MovieList() {
     },
   ]);
 
-  const addMovie = (newMovie) => {
+ const addMovie = (newMovie) => {
     setMovies([...movies, newMovie]);
   };
 
